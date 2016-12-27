@@ -1,0 +1,66 @@
+<!-- 
+     Document    : index.html
+     Author      : Srimathi Sathyanarayanan
+     Description : This is the main display page. From this page the user can add new posts or browse through the posts
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+</head>
+<body style="font-family:Arial;">
+
+    <p><a href="main.php" style="float:right">Logout</a></p>
+
+    <h2 style="text-align:center;
+               font-size:30px;
+               font-family:Verdana Arial sans-seriff;
+               color:#000099;">
+        Mini - Craiglist</h2>
+
+    <form method = "post" action = "search.php" style="float:right">
+        Search :
+        <p><input type ="text" name="search">
+        <input type="Submit" value="Submit">
+        <input type="reset" value="Reset"></p>
+    </form>
+    <br>
+    <a href="newpost.php"> New Post </a>
+
+    <table border="1" style="width:100%">
+           <tr>
+              <th><b>For Sales</b></th>
+              <th><b>Services</b></th>
+              <th><b>Jobs</b></th>
+              <th><b>Country</b></th>
+              <th><b>Locations</b></th>
+           </tr>
+           <tr>
+              <td> <a href="list.php?link=books"> Books </a></td>
+              <td> <a href="list.php?link=computer"> Computer </a></td>
+              <td> <a href="list.php?link=fulltime"> Full-Time </a></td>
+              <td> <a href="list.php?link=usa"> USA </a></td>
+              <td> <a href="list.php?link=cupertino"> Cupertino </a></td>
+           </tr>
+           <tr>
+              <td> <a href="list.php?link=electronics"> Electronics </a></td>
+              <td> <a href="list.php?link=financial"> Financial </a></td>
+              <td> <a href="list.php?link=parttime"> Part-Time </a></td>
+              <td> <a href="list.php?link=india"> India </a></td>
+              <td> <a href="list.php?link=mumbai"> Mumbai </a></td>
+           </tr>
+           <tr>
+              <td> <a href="list.php?link=household"> Household </a></td>
+              <td> <a href="list.php?link=automobiles"> Automobiles </a></td>
+              <td> <a href="list.php?link=volunteering"> Volunteering </a></td>
+              <td> <a href="list.php?link=sweden"> Sweden </a></td>
+              <td> <a href="list.php?link=stockholm"> Stockholm </a></td>
+           </tr>
+    </table>
+    <br> <br> <br> <br>
+    <p><center><a href="">Terms and Conditions</a> |
+    <a href ="">About US</a> |
+    <a href =""> Help </a></center></p>
+</body>
+</html>
